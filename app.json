@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Momentum Kampsport",
+    "slug": "momentum-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#06151C"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#06151C"
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a9c557aa-9191-40b8-b630-aed74360fde3"
+      }
+    }
+  }
+}

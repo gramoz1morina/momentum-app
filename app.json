@@ -1,27 +1,45 @@
 {
   "expo": {
-    "name": "Momentum Kampsport",
+    "name": "Momentum IF",
     "slug": "momentum-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "splash": {
       "backgroundColor": "#06151C"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "se.momentumif.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#06151C"
-      }
+      },
+      "package": "se.momentumif.app"
     },
     "extra": {
       "eas": {
         "projectId": "a9c557aa-9191-40b8-b630-aed74360fde3"
       }
-    }
+    },
+    "scheme": "momentumif",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Tillåt Momentum IF att läsa QR-koden för incheckning.",
+          "recordAudioAndroid": false,
+          "microphonePermission": false
+        }
+      ],
+      "expo-font"
+    ]
   }
 }
